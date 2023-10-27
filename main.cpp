@@ -6,6 +6,7 @@ using namespace std;
 int datatypes();
 int strings();
 int numbers();
+int power();
 //string getDayOfWeek();
 int array();
 //int guessingGame();
@@ -29,6 +30,15 @@ int getMax(int num1, int num2, int num3){
     return result;
 }
 
+int power(int baseNum, int powNum){
+    int result = 1;
+
+    for(int i = 0; i < powNum; i++){
+        result *= baseNum;
+    }
+
+    cout << "power is " << result << endl;
+}
 
 int main()
 {
@@ -47,6 +57,7 @@ int main()
     strings();
     numbers();
     array();
+    power(5,2);
    // information();
     //calculator();
     //madlib();
