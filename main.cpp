@@ -6,7 +6,14 @@ using namespace std;
 int datatypes();
 int strings();
 int numbers();
-int power();
+int numberGrid[3][2] = {
+                        {1,2},
+                        {3,4},
+                        {5,6}
+};
+
+
+//int power();
 //string getDayOfWeek();
 int array();
 //int guessingGame();
@@ -57,7 +64,7 @@ int main()
     strings();
     numbers();
     array();
-    power(5,2);
+    //power(5,2);
    // information();
     //calculator();
     //madlib();
@@ -69,6 +76,12 @@ int main()
     cout << cube(5.0) << endl;
     //cout << getDayOfWeek(1) << endl;
 
+    for(int i = 0; i < 3; i++){
+        for(int j = 0; j< 2; j++){
+        cout << "grid number " << numberGrid[i][j];
+    }
+    cout << endl;
+};
 
     if(isMale && isTall){
     cout << "You are a tall male" << endl;
