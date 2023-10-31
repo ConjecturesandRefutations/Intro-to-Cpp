@@ -16,6 +16,7 @@ int numberGrid[3][2] = {
 //int power();
 //string getDayOfWeek();
 int array();
+int pointer();
 //int guessingGame();
 //int calculatorTwo();
 //int information();
@@ -64,6 +65,7 @@ int main()
     strings();
     numbers();
     array();
+    pointer();
     //power(5,2);
    // information();
     //calculator();
@@ -352,3 +354,36 @@ int guessingGame(){
     }
     return 0;
 }
+
+int pointer(){
+
+    int age = 19;
+    double height = 210;
+    string name = "Bob";
+
+    cout << "Pointer for age " << &age << endl;
+    //cout << "Pointer for height " << &height << endl;
+    //cout << "Pointer for name " << &name << endl;
+
+//The memory address is accessed by writing '&' before the variable
+//The memory address is the physical address where the memory is stored in the RAM
+//In C++, these addresses are called 'pointers'
+
+    int *pAge = &age; // You used the asterix to indicate that you are creating a pointer variable
+    //By convention, you use camelCase for pointer variables
+    double *pHeight = &height;
+    string *pName = &name;
+
+cout << pAge;
+
+//To de-reference the pointer, you simply add * add the front, such as pAge
+//This will give the age value
+}
+
+//Single-line comment
+
+/*
+Multi line comment
+Yo, this is still part of the comment
+*/
+
