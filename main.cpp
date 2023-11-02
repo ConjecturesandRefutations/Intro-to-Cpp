@@ -3,6 +3,13 @@
 
 using namespace std;
 
+class Book {
+    public:
+        string title;
+        string author;
+        int pages;
+};
+
 int datatypes();
 int strings();
 int numbers();
@@ -12,11 +19,10 @@ int numberGrid[3][2] = {
                         {5,6}
 };
 
-
 //int power();
 //string getDayOfWeek();
 int array();
-int pointer();
+//int pointer();
 //int guessingGame();
 //int calculatorTwo();
 //int information();
@@ -65,7 +71,7 @@ int main()
     strings();
     numbers();
     array();
-    pointer();
+    //pointer();
     //power(5,2);
    // information();
     //calculator();
@@ -130,6 +136,20 @@ for(int i = 0; i<5; i++){
 }
 //We can see that the C++ for loop is basically the same as
 //in JavaScript, except that the index type is specified
+
+Book book1;
+book1.title = "Barry Trotter";
+book1.author = 'JK Rolly Polly';
+book1.pages = 500;
+
+Book book2;
+book2.title = "Smelly Fish";
+book2.author = 'Cod Man';
+book2.pages = 5;
+book2.title = "New Title"; // You can also update by re-assigning the attribute
+
+cout << book1.title << endl;
+cout << book2.title << endl;
 
     return 0;
 }
@@ -374,11 +394,12 @@ int pointer(){
     double *pHeight = &height;
     string *pName = &name;
 
-cout << pAge;
+cout << "Variable for pointer age " << pAge << endl;
 
 //To de-reference the pointer, you simply add * add the front, such as pAge
 //This will give the age value
 }
+
 
 //Single-line comment
 
